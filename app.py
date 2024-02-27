@@ -11,8 +11,8 @@ from keras.models import load_model
 from keras.preprocessing.image import load_img, img_to_array
 import numpy as np
 # Replace with your actual channel access token and secret
-line_bot_api = LineBotApi('ELerOTczqsgDjtK7550HOKMoRN0rlXMDA00Hox0HnbFMKLMAlj0BbJqKbKZ1uPve0A/43R7G8KujRkicjukFOPfcgthBYm3oz44T0HEyEvHWMGDPN5GkhWUQ+NAfgxHygwfU+cjH6SYX5dYjo4SCTAdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('03b3ea683acc3e11ff122f432f64d9ff')
+line_bot_api = LineBotApi('LINE_CHANNEL_ACCESS_TOKEN')
+handler = WebhookHandler('LINE_CHANNEL_SECRET')
 
 app = Flask(__name__)
 
