@@ -12,7 +12,7 @@ from keras.preprocessing.image import load_img, img_to_array
 import numpy as np
 # Replace with your actual channel access token and secret
 line_bot_api = LineBotApi('LINE_CHANNEL_ACCESS_TOKEN')
-handler = WebhookHandler('LINE_CHANNEL')
+handler = WebhookHandler('LINE_CHANNEL_SECRET')
 
 app = Flask(__name__)
 
