@@ -1,16 +1,12 @@
 from flask import Flask, request, abort
-from linebot.v3.messaging import MessagingApi
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
-from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageMessage, ImageSendMessage
-from tempfile import NamedTemporaryFile
-import os
+from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageMessage
 import cv2
-
 from keras.models import load_model
-from keras.preprocessing.image import load_img, img_to_array
+from keras.preprocessing.image import load_img
 import numpy as np
-# Replace with your actual channel access token and secret
+
 line_bot_api = LineBotApi('LINE_CHANNEL_ACCESS_TOKEN')
 handler = WebhookHandler('LINE_CHANNEL_SECRET')
 

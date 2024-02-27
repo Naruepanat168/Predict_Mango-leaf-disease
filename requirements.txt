@@ -1,0 +1,6 @@
+opencv-python
+python-dotenv
+line-bot-sdk
+flask
+tensorflow
+numpy
